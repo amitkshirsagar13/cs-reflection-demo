@@ -1,0 +1,36 @@
+users:
+  - id: USR-101
+    firstName: Carlos
+    lastName: Mendez
+    username: carlos.m
+    password: hashed_pw_101
+    age: 34
+    emails:
+      - carlos@example.com
+      - c.mendez@work.net
+    mobiles:
+      - "+1-555-300-4000"
+    address:
+      firstLine: "321 Elm Street"
+      aptUnit: ""
+      city: "Denver"
+      state: "CO"
+      zip: "80201"
+
+  - id: USR-102
+    firstName: Yuki
+    lastName: Tanaka
+    username: yuki.t
+    password: hashed_pw_102
+    age: 22
+    emails:
+      - yuki@example.com
+    mobiles:
+      - "+81-90-1234-5678"
+      - "+1-555-400-5000"
+    address:
+      firstLine: "654 Cherry Lane"
+      aptUnit: "Suite 10"
+      city: "Seattle"
+      state: "WA"
+      zip: "98101"

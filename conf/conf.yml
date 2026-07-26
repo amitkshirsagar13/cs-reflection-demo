@@ -1,0 +1,18 @@
+# ──────────────────────────────────────────────────────────
+#  User Profile App — Configuration
+# ──────────────────────────────────────────────────────────
+
+[app]
+name    = UserProfileApp
+version = 1.0.0
+
+[logging]
+# Level: DEBUG | INFO | WARN | ERROR
+level     = DEBUG
+to_file   = true
+file_path = app.log
+
+[csbridge]
+# Path to the compiled C# runner DLL, relative to the exe.
+# Set to an absolute path if you keep the dll elsewhere.
+runner_path = csbridge/CsRunner.dll

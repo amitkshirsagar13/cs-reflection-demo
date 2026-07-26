@@ -1,0 +1,53 @@
+[
+  {
+    "id": "USR-001",
+    "firstName": "Alice",
+    "lastName": "Nakamura",
+    "username": "alice.n",
+    "password": "hashed_pw_1",
+    "age": 31,
+    "emails": ["alice@example.com", "alice.work@corp.io"],
+    "mobiles": ["+1-555-100-2000"],
+    "address": {
+      "firstLine": "123 Maple Street",
+      "aptUnit": "Apt 4B",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62701"
+    }
+  },
+  {
+    "id": "USR-002",
+    "firstName": "Bob",
+    "lastName": "Okonkwo",
+    "username": "bobo",
+    "password": "hashed_pw_2",
+    "age": 25,
+    "emails": ["bob@example.com"],
+    "mobiles": ["+1-555-200-3000", "+1-555-200-3001"],
+    "address": {
+      "firstLine": "456 Oak Avenue",
+      "aptUnit": "",
+      "city": "Riverside",
+      "state": "CA",
+      "zip": "92501"
+    }
+  },
+  {
+    "id": "USR-003",
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "username": "priya.s",
+    "password": "hashed_pw_3",
+    "age": 28,
+    "emails": ["priya@example.com", "p.sharma@uni.edu"],
+    "mobiles": [],
+    "address": {
+      "firstLine": "789 Pine Road",
+      "aptUnit": "Unit 2",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "73301"
+    }
+  }
+]
