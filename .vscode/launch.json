@@ -13,6 +13,14 @@
         {
           "name": "CSRUNNER_LOG_LEVEL",
           "value": "DEBUG"
+        },
+        {
+          "name": "CSRUNNER_LOG_FILE",
+          "value": "${workspaceFolder}/build/bin/csrunner.log"
+        },
+        {
+          "name": "CSRUNNER_DEBUG",
+          "value": "1"
         }
       ],
       "externalConsole": false,

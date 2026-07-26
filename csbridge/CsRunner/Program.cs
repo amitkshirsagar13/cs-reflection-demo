@@ -26,12 +26,13 @@ try
 {
 // ════════════ PLACE DEBUG INTERCEPT HERE ════════════
 #if DEBUG
-    if (args.Length > 1) 
+    // Triggers if you set the environment variable CSRUNNER_DEBUG=1 in launch.json
+    if (Environment.GetEnvironmentVariable("CSRUNNER_DEBUG") == "1") 
     {
-        Console.Error.WriteLine($"[DEBUG] C# Spawning. Process ID: {Environment.ProcessId}. Waiting for debugger attach...");
+        Console.Error.WriteLine($"[DEBUG] Process ID: {Environment.ProcessId}. Waiting for debugger...");
         while (!System.Diagnostics.Debugger.IsAttached)
         {
-            Thread.Sleep(100); // Pauses the process loop until you attach via VS Code
+            Thread.Sleep(100);
         }
     }
 #endif
