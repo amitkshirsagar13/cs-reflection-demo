@@ -24,6 +24,17 @@ if (!File.Exists(filePath))
 
 try
 {
+// ════════════ PLACE DEBUG INTERCEPT HERE ════════════
+#if DEBUG
+    if (args.Length > 1) 
+    {
+        Console.Error.WriteLine($"[DEBUG] C# Spawning. Process ID: {Environment.ProcessId}. Waiting for debugger attach...");
+        while (!System.Diagnostics.Debugger.IsAttached)
+        {
+            Thread.Sleep(100); // Pauses the process loop until you attach via VS Code
+        }
+    }
+#endif
     var settings = new JsonSerializerSettings
     {
         ContractResolver  = new CamelCasePropertyNamesContractResolver(),

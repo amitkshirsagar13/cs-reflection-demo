@@ -158,12 +158,13 @@ fi
 
 # ── Build C# ──────────────────────────────────────────────────────────────
 if $BUILD_CS; then
-    print_header "Building C# Bridge"
+    print_header "Building C# Bridge  [${BUILD_TYPE}]"
 
     mkdir -p "${CS_OUT_DIR}"
 
+    # Change --configuration Release to use the dynamic BUILD_TYPE variable
     dotnet build "${CS_DIR}/CsRunner.csproj" \
-        --configuration Release \
+        --configuration "${BUILD_TYPE}" \
         --output "${CS_OUT_DIR}"
 
     print_ok "C# build complete → ${CS_OUT_DIR}/"

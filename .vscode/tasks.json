@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Stage Assets and Build",
+      "type": "shell",
+      "command": "./build.sh -a && mkdir -p build/bin && cp samples/*.json build/bin/ 2>/dev/null || true && cp samples/*.yml build/bin/ 2>/dev/null || true",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
